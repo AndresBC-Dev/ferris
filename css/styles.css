@@ -29,6 +29,32 @@ body {
     align-items: center;
     padding: 10px 10px;
 }
+
+#logotipo {
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    align-items: center ;
+    justify-content: center;
+    height: 50px;
+    width: 90px;
+    background-color: #FEF9E1;
+    font-size: 30px;
+    text-align: center;
+    color: #f1f1f1;
+    overflow: hidden;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-decoration-color: #111;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#dash-logo {
+    height: 1px;
+    width: 5px;
+    background-color: FEF9E1;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
 .side-panel{
     height: 100vh;
     width: 0;
@@ -103,7 +129,7 @@ body {
 
 #search-bar {
     border: 1px solid grey;
-    width: 28rem;
+    width: 34rem;
     padding: 2px 0 2px 0;
     outline: 0;
     box-sizing: border-box;
@@ -118,11 +144,16 @@ body {
     width: 50px;
     height: 50px;
 }
+.cart-img:hover {
+    background-color: #E5D0AC;
+}
 
 .avatar-logo {
     width: 50px;
     height: 50px;
-
+}
+.avatar-logo:hover {
+    background-color: #E5D0AC;
 }
 .enlaces {
     width: 100%;
@@ -245,5 +276,33 @@ body {
     font-weight: bold;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div {
+    height: 150px;
+    color: #f1f1f1;
+}
+
+footer h3 {
+    font-size: larger;
+    color: #000;
+}
+footer a {
+    color: gray;
+}
+footer a:hover {
+    color: black;
+}
+footer li {
+    color: gray;
+}
+footer li:hover {
+    color: black;
     cursor: pointer;
 }
