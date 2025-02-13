@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Ferris</title>
 </head>
+
 <body>
     <div class="header">
-        <div>panel</div>
-        <div>locacion</div>
-        <div><input type="search" name="" id=""></div>
-        <div>cart</div>
-        <div>User</div>
+        
+        <div class="header-top">
+            <div id="mySidepanel" class="side-panel">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+            <div><a href=""><img class="location-img" src="./resources/location.svg" alt="" srcset=""></a></div>
+
+            <div class="search-container">
+                <input type="search" name="" id="search-bar">
+                <div class="search-button"><img class="search-img" src="./resources/search.svg" alt="" srcset=""></div>
+            </div>
+            <div><a href="####"><img class="cart-img" src="./resources/cart.svg" alt=""></a></div>
+            <div><a href=""><img class="avatar-logo" src="./resources/user.svg" alt=""></a></div>
+        </div>
+
+
+        <div class="enlaces">
+            <ul>
+                <li><a href="##">Promociones</a></li>
+                <li><a href="##">Herramientas</a></li>
+                <li><a href="##">Materiales</a></li>
+                <li><a href="##">Servicios</a></li>
+                <li><a href="##">Top Ventas</a></li>
+            </ul>
+        </div>
     </div>
     <section class="brands-container">
         <div class="carousel-track">
@@ -22,7 +51,7 @@
             <div class="brand"> <img src="./resources/pintu.jpg" alt=""></div>
             <div class="brand"> <img src="./resources/cat.jpg" alt=""></div>
             <div class="brand"> <img src="./resources/3mm.jpg" alt=""></div>
-            
+
             <div class="brand"> <img src="./resources/yale.jpg" alt=""></div>
             <div class="brand"> <img src="./resources/foset.jpg" alt=""></div>
             <div class="brand"> <img src="./resources/rohm.jpg" alt=""></div>
@@ -87,4 +116,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
