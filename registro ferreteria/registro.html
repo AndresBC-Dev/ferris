@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regis.css">
+    <title>Registro</title>
+    <style>
+       
+        #password_error {
+            color: red;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <header></header>
+
+    
+    <div class="main-container">
+        
+        <div class="container">
+            <h1>Bienvenido a El Herrajero</h1>
+            <p>Queremos que te unas a la familia de herrajero y tengas tus herramientas para armar, arreglar y diseñar tu hogar.</p>
+
+            <div class="promo-box">
+                <p>Si te registras con nosotros, podremos enviarte promociones y descuentos de nuestros productos. ¡Arma tu caja de herramientas con nostros!</p>
+            </div>
+        </div>
+    <div class="form-container">
+
+        <form action="" class="formulario" id="formregistro">
+            <h3>Registro</h3><br>
+            <div>
+                <label for="nombres">Nombres: </label>
+                <input type="text" id="nombres" name="nombres" placeholder="Primer Nombre" required> 
+            </div>
+    
+            <div>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" name="apellido" placeholder="Primer Apellido" required> 
+            </div>
+    
+            <div>
+                <label for="direccion">Dirección: </label>
+                <input type="text" id="direccion" name="direccion" placeholder="######" required> 
+            </div>
+    
+            <div>
+                <label for="telefono">Teléfono: </label>
+                <input type="text" id="telefono" name="telefono" placeholder="numero" required> 
+                
+            </div>
+    
+            <div>
+                <label>Sexo: </label>
+                <select id="sexo" name="sexo">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento: </label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required> 
+            </div>
+    
+            <div>
+                <label for="correo">Correo electrónico: </label>
+                <input type="email" id="correo" name="correo" placeholder="...@gmail.com" required>
+            </div>
+    
+            <div>
+                <label for="identificacion">Identificación: </label>
+                <input type="number" id="identificacion" name="identificacion" placeholder="123456789" required> 
+            </div>
+    
+            <div>
+                <label for="password">Contraseña: </label>
+                <input type="password" id="password" name="password" placeholder="°°°°°°°°°°" required> 
+    
+            <div>
+                <label for="confirm_password">Confirmar Contraseña: </label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="°°°°°°°°°°°" required>
+            </div>
+    
+            <p id="password_error">Las contraseñas no coinciden.</p>
+            <br>
+    
+            <input type="submit" value="Registrar">
+            <br>
+            <br>
+        </form>
+    </div>
+
+  
+    <script src="script.js"></script>
+    <p id="success_message" style="color: green; display: none;">Registro exitoso</p>
+</body>
+</html>

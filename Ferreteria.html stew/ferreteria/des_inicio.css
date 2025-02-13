@@ -1,0 +1,110 @@
+/* DISEÑO DE PÁGINA INICIÓ */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fef9e1;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 80vh;
+}
+.login-box {
+  flex: 1;
+  background-color: #f5d0ac;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+}
+.login-box {
+  background-color: #fef9e1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: left;
+}
+.login-box {
+  width: 720px;
+  height: 540px;
+  background-color: #f5d0ac;
+  color: #6d2323;
+  top: 20%;
+  left: 30%;
+  position: absolute;
+  transform: translate(-50, -50);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid transparent;
+  border-radius: 12px;
+}
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.login-box .h3 {
+  margin: 0;
+  padding: 0 0 20;
+  text-align: center;
+  font-size: 22px;
+}
+.input-campo {
+  background-color: azure;
+  outline: none;
+  border: 3px solid #c5b79e;
+  border-radius: 5px;
+}
+
+.login-box .label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #6d2323;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #9b313b;
+  color: #ffffff;
+}
+.login-box input[type="button"]:hover {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  border-bottom-color: #6d2323;
+  cursor: pointer;
+  background: #9b313b;
+  color: #ffffff;
+}
+
+.login-box a:hover {
+  border: none;
+  outline: none;
+  color: #000000;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  text-decoration: none;
+  font-size: 8px;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+}
