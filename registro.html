@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="regis.css">
+    <link rel="stylesheet" href="./css/regis.css">
+    <link rel="shortcut icon" href="./resources/hammer-favicon.svg" type="image/x-icon">
     <title>Registro</title>
     <style>
        
@@ -27,6 +28,10 @@
             <div class="promo-box">
                 <p>Si te registras con nosotros, podremos enviarte promociones y descuentos de nuestros productos. ¡Arma tu caja de herramientas con nostros!</p>
             </div>
+            <div class="promo-box">
+                <p>Ingresa si ya tienes una cuenta</p>
+                <a href="./login.html">Login</a>
+            </div>
         </div>
     <div class="form-container">
 
@@ -34,22 +39,22 @@
             <h3>Registro</h3><br>
             <div>
                 <label for="nombres">Nombres: </label>
-                <input type="text" id="nombres" name="nombres" placeholder="Primer Nombre" required> 
+                <input type="text" id="nombres" name="nombres" placeholder="Primer Nombre"> 
             </div>
     
             <div>
                 <label for="apellido">Apellido: </label>
-                <input type="text" id="apellido" name="apellido" placeholder="Primer Apellido" required> 
+                <input type="text" id="apellido" name="apellido" placeholder="Primer Apellido"> 
             </div>
     
             <div>
                 <label for="direccion">Dirección: </label>
-                <input type="text" id="direccion" name="direccion" placeholder="######" required> 
+                <input type="text" id="direccion" name="direccion" placeholder="######"> 
             </div>
     
             <div>
                 <label for="telefono">Teléfono: </label>
-                <input type="text" id="telefono" name="telefono" placeholder="numero" required> 
+                <input type="text" id="telefono" name="telefono" placeholder="numero"> 
                 
             </div>
     
@@ -64,26 +69,26 @@
     
             <div>
                 <label for="fecha_nacimiento">Fecha de nacimiento: </label>
-                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required> 
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"> 
             </div>
     
             <div>
                 <label for="correo">Correo electrónico: </label>
-                <input type="email" id="correo" name="correo" placeholder="...@gmail.com" required>
+                <input type="email" id="correo" name="correo" placeholder="...@gmail.com">
             </div>
     
             <div>
                 <label for="identificacion">Identificación: </label>
-                <input type="number" id="identificacion" name="identificacion" placeholder="123456789" required> 
+                <input type="number" id="identificacion" name="identificacion" placeholder="123456789"> 
             </div>
     
             <div>
                 <label for="password">Contraseña: </label>
-                <input type="password" id="password" name="password" placeholder="°°°°°°°°°°" required> 
+                <input type="password" id="password" name="password" placeholder="°°°°°°°°°°"> 
     
             <div>
                 <label for="confirm_password">Confirmar Contraseña: </label>
-                <input type="password" id="confirm_password" name="confirm_password" placeholder="°°°°°°°°°°°" required>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="°°°°°°°°°°°">
             </div>
     
             <p id="password_error">Las contraseñas no coinciden.</p>
@@ -95,8 +100,8 @@
         </form>
     </div>
 
-  
-    <script src="script.js"></script>
     <p id="success_message" style="color: green; display: none;">Registro exitoso</p>
+  
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -11,7 +11,12 @@ header {
     height: 120px;
     background-color: #A31D1D;
 }
-
+#logotipo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FEF9E1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -58,7 +63,14 @@ header {
     font-size: 1.1rem;
     font-weight: bold;
 }
-
+.promo-box a {
+    color: #A31D1D;
+    text-decoration: none;
+    font-weight: bold;
+}
+.promo-box a:hover {
+    color: #c72828;
+}
 .form-container {
     flex: 1;
     background-color: #F5D0AC;

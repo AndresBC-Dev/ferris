@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./resources/hammer-favicon.svg" type="image/x-icon">
+    <title>Iniciar Sesión</title>
+    <style>
+        #error_message {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <h1>Bienvenido de nuevo a El Herrajero</h1>
+            <p>Ingresa tus credenciales para acceder a tu cuenta y disfrutar de nuestras herramientas y promociones.</p>
+        </div>
+
+        <div class="form-container">
+            <form action="" class="formulario" id="formlogin">
+                <h3>Iniciar Sesión</h3><br>
+                
+                <div>
+                    <label for="correo">Correo electrónico: </label>
+                    <input type="email" id="correo" name="correo" placeholder="...@gmail.com" required>
+                </div>
+
+                <div>
+                    <label for="password">Contraseña: </label>
+                    <input type="password" id="password" name="password" placeholder="°°°°°°°°°°" required>
+                </div>
+
+                <p id="error_message">Credenciales incorrectas. Inténtalo de nuevo.</p>
+                <br>
+
+                <input type="submit" value="Iniciar Sesión">
+                <br>
+                <br>
+
+                <div class="links">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <br>
+                    <br>
+                    <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

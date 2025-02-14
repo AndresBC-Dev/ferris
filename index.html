@@ -11,7 +11,6 @@
 
 <body>
     <div class="header">
-
         <div class="header-top">
             <div id="mySidepanel" class="side-panel">
 
@@ -21,29 +20,37 @@
                 <a href="#">Clients</a>
                 <a href="#">Contact</a>
             </div>
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-            
-            <div><a href=""><img class="location-img" src="./resources/location.svg" alt="" srcset=""></a></div>
-            
-            <div class="search-container">
-                <input type="search" name="" placeholder="Search" id="search-bar">
-                <div class="search-button"><img class="search-img" src="./resources/search.svg" alt="" srcset=""></div>
+            <div class="header-left">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <div id="logotipo">
+                    <h3>E<span id="dash-logo">|</span>H</h3>
+                </div>
             </div>
-            <div><a href="####"><img class="cart-img" src="./resources/cart.svg" alt=""></a></div>
-            <div><a href="./login.html"><img class="avatar-logo" src="./resources/user.svg" alt=""></a></div>
-            <div id="logotipo">
-                <h3>E<span id="dash-logo">|</span>H</h3>
+
+
+            <div class="header-center">
+                <div class="search-container">
+                    <input type="search" placeholder="Buscar..." id="search-bar">
+                    <button class="search-button"><img class="search-img" src="./resources/search.svg" alt="Buscar"></button>
+                </div>
+            </div>
+
+            <!-- Parte derecha -->
+            <div class="header-right">
+                <a href="#"><img class="location-img" src="./resources/location.svg" alt="Ubicación"></a>
+                <a href="#"><img class="cart-img" src="./resources/cart.svg" alt="Carrito"></a>
+                <a href="./login.html"><img class="avatar-logo" src="./resources/user.svg" alt="Usuario"></a>
             </div>
         </div>
         
         
         <div class="enlaces">
             <ul>
-                <li><a href="##">Promociones</a></li>
-                <li><a href="##">Herramientas</a></li>
-                <li><a href="##">Materiales</a></li>
-                <li><a href="##">Servicios</a></li>
-                <li><a href="##">Top Ventas</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Herramientas</a></li>
+                <li><a href="#">Materiales</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Top Ventas</a></li>
             </ul>
         </div>
     </div>
