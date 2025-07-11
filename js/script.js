@@ -1,3 +1,118 @@
+// script.js actualizado para consumir la API
+
+const API_URL = 'http://localhost:5000';
+
+// Función para abrir el panel lateral
+function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+}
+
+// Función para cerrar el panel lateral
+function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+}
+
+// Función para cargar productos desde la API
+async function loadProducts() {
+    try {
+        const response = await fetch(`${API_URL}/products`);
+        if (!response.ok) {
+            throw new Error('Error al cargar productos');
+        }
+        const products = await response.json();
+        displayProducts(products);
+    } catch (error) {
+        console.error('Error:', error);
+        // Si hay error, mostrar productos de ejemplo
+        displayProducts([
+            {
+                id: 1,
+                name: 'Producto de ejemplo',
+                price: 10000,
+                image: './resources/product.jpg'
+            }
+        ]);
+    }
+}
+
+// Función para mostrar productos en el HTML
+function displayProducts(products) {
+    const container = document.querySelector('.products-container');
+    
+    // Limpiar container
+    container.innerHTML = '';
+    
+    // Si no hay productos, mostrar mensaje
+    if (products.length === 0) {
+        container.innerHTML = `
+            <div style="text-align: center; width: 100%; padding: 40px;">
+                <h3>No hay productos disponibles</h3>
+                <p>Agrega productos usando el panel de administración</p>
+            </div>
+        `;
+        return;
+    }
+    
+    // Crear cards para cada producto
+    products.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card';
+        
+        productCard.innerHTML = `
+            <img class="product-img" src="${product.image}" alt="${product.name}" onerror="this.src='./resources/product.jpg'">
+            <p class="product-name">${product.name}</p>
+            <p class="product-price">${formatPrice(product.price)} COP</p>
+            <input class="product-button" type="button" value="Comprar" onclick="buyProduct(${product.id})">
+        `;
+        
+        container.appendChild(productCard);
+    });
+}
+
+// Función para formatear el precio
+function formatPrice(price) {
+    return new Intl.NumberFormat('es-CO').format(price);
+}
+
+// Función para simular compra
+function buyProduct(productId) {
+    alert(`Producto ${productId} agregado al carrito`);
+    // Aquí puedes agregar lógica para el carrito
+}
+
+// Función para agregar producto desde el admin (opcional)
+async function addProduct(productData) {
+    try {
+        const response = await fetch(`${API_URL}/products`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(productData)
+        });
+        
+        if (response.ok) {
+            const newProduct = await response.json();
+            console.log('Producto creado:', newProduct);
+            loadProducts(); // Recargar productos
+            return true;
+        } else {
+            const error = await response.json();
+            console.error('Error al crear producto:', error);
+            return false;
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        return false;
+    }
+}
+
+// Cargar productos cuando se carga la página
+document.addEventListener('DOMContentLoaded', function() {
+    loadProducts();
+});
+
+
 /* Codificar las validaciones de usuario */
 const formulario = document.getElementById('formregistro');
 const nombres = document.getElementById('nombres');
